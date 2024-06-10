@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true" class="login-content">
+  <div class="top-image-container">
+    <img src="./assets/logo.jpg" alt="Logo">
+  </div>
+
+  <form class="schedule-form">
+    <ion-item class="input-item">
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" class="custom-input"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="tel" class="custom-input"></ion-input>
+    </ion-item>
+  </form>
+
+  <div class="button-container">
+    <ion-buttons slot="primary" (click)="Login()">
+      <ion-button expand="full">Login</ion-button>
+      </ion-buttons>
+  
+  </div>
+
+  <div class="social-login-container">
+    <h2>Or log in with</h2>
+    <ion-icon name="logo-google" class="social-icon"></ion-icon>
+  </div>
+</ion-content>
